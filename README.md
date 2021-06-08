@@ -19,7 +19,7 @@ Here are some example visualizations:
 **Bar Plot**
 > Use color wisely: What do you want the reader to see right away? 
 
-![Bar Plot](https://github.com/kpounder/graphing/blob/327c8dc73af6d01c6e3e4e24cda2291e7a4e3a3a/examples/bar.png?raw=true)
+![Bar Plot](https://github.com/kpounder/graphing/blob/773da43e3433cbb426f95430c77ba1a3ddfbafdf/examples/bar.png?raw=true)
 
 This repo contains the following files:
 
