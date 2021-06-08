@@ -104,7 +104,6 @@ sns.barplot(
 )
 ax = csns.customize_axis(
     ax=ax,
-    grid=True,
     xticklabels=['Mon', 'Tues', 'Weds', 'Thurs', 'Fri'],
     spines={'top': False, 'right': False, 'bottom': 'grey', 'left': False}
 )
