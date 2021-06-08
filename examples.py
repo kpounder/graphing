@@ -1,9 +1,10 @@
-import graphing.custom_seaborn as csns
 import numpy as np
 import pandas as pd
 import datetime
 import matplotlib.pyplot as plt
 import seaborn as sns
+import graphing.custom_seaborn as csns
+
 
 l = len(pd.date_range(start=datetime.date(2018,1,1), end=datetime.date(2018,7,1), freq='D'))
 test_data = pd.DataFrame(

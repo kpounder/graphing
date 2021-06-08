@@ -1,3 +1,5 @@
+# This file contains the preferences for graph colors, fonts, font sizes, etc. 
+
 'title': 
   'fontsize': 24
   'color': 'steelblue'
