@@ -8,5 +8,8 @@ We provide a function to overwrite some Seaborn plot defaults in order to produc
 * examples.py: 
     * A few data viz examples
 
+* preferences.yaml
+    * Contains the desired font sizes, fonts, colors, etc.
+
 * requirements.txt
     * Required libraries 
