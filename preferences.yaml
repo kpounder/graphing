@@ -1,0 +1,33 @@
+'title': 
+  'fontsize': 24
+  'color': 'steelblue'
+  'loc': 'left'
+  'pad': 20
+
+'axislabels': 
+  'fontsize': 16
+  'color': 'grey'
+  'labelpad': 10
+
+'xaxislabel': 
+  'horizontalalignment': 'left'
+  'x': 0
+
+'yaxislabel': 
+  'horizontalalignment': 'left'
+  'y': 0
+
+'axisticks': 
+  'color': 'grey'
+  'labelsize': 14
+  'labelcolor': 'grey'
+
+'grid': 
+  'color': 'lightgrey'
+  'linestyle': '--'
+  'linewidth': 1
+  'alpha': 0.5
+
+'annotation': 
+  'fontsize': 16
+  'color': 'grey'
