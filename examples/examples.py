@@ -9,6 +9,12 @@ import graphing.custom_seaborn as csns
 
 
 # Sample data for graphs 
+temp_data = pd.DataFrame(
+    data={
+        'cels': np.arange(0, 110, step=10),
+    }
+)
+temp_data['fahr'] = 9/5 * temp_data['cels'] + 32 
 l = len(pd.date_range(start=datetime.date(2018,1,1), end=datetime.date(2018,7,1), freq='D'))
 test_data = pd.DataFrame(
     data={
@@ -24,10 +30,13 @@ test_data = pd.DataFrame(
 # Basic line plot
 fig, ax = plt.subplots(figsize=(10,5))
 sns.lineplot(
-    x='x', y='y', data=test_data.iloc[:20, :], err_style=None, linewidth=5, ax=ax
+    x='cels', y='fahr', data=temp_data, err_style=None, linewidth=5, ax=ax
 )
 ax = csns.customize_axis(
-    ax=ax
+    ax=ax,
+    title='Relationship between Temperatures in Fahrenheit and Celsius',
+    xlabel='Degrees Celsius',
+    ylabel='Degrees Fahrenheit'
 )
 plt.show()
 
@@ -75,7 +84,7 @@ ax[0] = csns.customize_axis(
     ax=ax[0],
     grid=True,
     title='Overall Title',
-    ylabel='Upper Y Axis Title',
+    ylabel='Upper Y Title',
     showylabel=True,
     showxlabel=False,
     spines={'top': False, 'right': False, 'bottom': False, 'left': 'grey'}
@@ -83,7 +92,8 @@ ax[0] = csns.customize_axis(
 ax[1] = csns.customize_axis(
     ax=ax[1],
     grid=True,
-    ylabel='Lower Y Axis Title'
+    ylabel='Lower Y Title',
+    xlabel='X Title'
 )
 plt.show()
 
